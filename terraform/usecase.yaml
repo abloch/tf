@@ -3,4 +3,4 @@ icons:
 - "https://w7.pngwing.com/pngs/745/716/png-transparent-bart-simpson-homer-simpson-lisa-simpson-marge-simpson-bart-simpson-cartoon-vehicle-product-thumbnail.png"
 description: ""
 secrets:
-  aaa: aaa
+  apitok: API_TOKEN
