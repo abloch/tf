@@ -1,12 +1,16 @@
-output "test" {
-  value = {
-    "test" = var.test
+terraform {
+  required_providers {
+    kubiya = {
+      source  = "kubiya-terraform/kubiya"
+    }
   }
 }
 
-output "apitok" {
-  value = {
-    "apitok" = var.apitok
-  }
-  sensitive = true
+provider "kubiya" {
+}
+
+resource "kubiya_secret" "akivasecret1" {
+  name     = "akivasecret1"
+  value    = "hush"
+  description = "hahahaha"
 }

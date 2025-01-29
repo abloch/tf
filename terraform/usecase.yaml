@@ -1,6 +1,13 @@
-name: "Allow dynamic infrastructure creation from Slack requests"
+name: "Akiva test:"
 icons: 
 - "https://w7.pngwing.com/pngs/745/716/png-transparent-bart-simpson-homer-simpson-lisa-simpson-marge-simpson-bart-simpson-cartoon-vehicle-product-thumbnail.png"
-description: ""
+description: "a dummy secret"
 secrets:
-  apitok: API_TOKEN
+  - name: api_token
+    description: the kubiya api token to be used
+    to_env: API_TOKEN
+
+  - name: jira_api_token
+    description: the attlassian api key
+    to_env: JIRA_TOKEN
+  

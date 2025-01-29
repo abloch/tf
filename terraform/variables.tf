@@ -1,9 +1,10 @@
 variable "test" {
     type = string
-	default = "test value"
+	  default = "test value"
 }
 
 variable "apitok" {
     type = string
     sensitive = true
+    default = "aaa"
 }
